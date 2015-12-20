@@ -4,8 +4,7 @@ import {Router} from 'angular2/router';
 @Component({
   selector: 'login-page',
   templateUrl: 'app/login/login.component.html',
-  styleUrls: ['app/login/login.component.css'],
-  inputs: ['login']
+  styleUrls: ['app/login/login.component.css']
 })
 export class LoginComponent{
   constructor(private _router: Router) { }
