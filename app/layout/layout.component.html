@@ -11,8 +11,8 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a [ngClass]="{active: active.Settings}" (click)="goTo('Settings')">Settings</a></li>
-        <li><a [ngClass]="{active: active.Profile}" (click)="goTo('Profile')">Profile</a></li>
+        <li [ngClass]="{active: active.Settings}"><a (click)="goTo('Settings')">Settings</a></li>
+        <li [ngClass]="{active: active.Profile}"><a (click)="goTo('Profile')">Profile</a></li>
         <li><a (click)="logout()">logout</a></li>
       </ul>
     </div>
@@ -22,9 +22,9 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li [ngClass]="{active: active.Layout}"><a (click)="goTo('Layout')">Dashboard <span class="sr-only">(current)</span></a></li>
-        <li><a [ngClass]="{active: active.Reports}" (click)="goTo('Reports')">Reports</a></li>
-        <li><a [ngClass]="{active: active.Blank}" (click)="goTo('Blank')">Blank Page</a></li>
+        <li [ngClass]="{active: active.Dashboard}"><a (click)="goTo('Dashboard')">Dashboard <span class="sr-only">(current)</span></a></li>
+        <li [ngClass]="{active: active.Reports}"><a (click)="goTo('Reports')">Reports</a></li>
+        <li [ngClass]="{active: active.Blank}"><a (click)="goTo('Blank')">Blank Page</a></li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
