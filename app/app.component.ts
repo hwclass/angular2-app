@@ -3,7 +3,6 @@ import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {LoginComponent} from './login/login.component';
 import {LayoutComponent} from './layout/layout.component';
 
-
 @Component({
   selector: 'app',
   templateUrl: `app/app.html`,
